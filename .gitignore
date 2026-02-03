@@ -1,0 +1,29 @@
+# Visual Studio and .NET
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+*.sln.docstates
+packages/
+*.nupkg
+.generated/
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/mcp.json
+
+# Node.js and Angular (Redundant if in subfolder, but good for safety)
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
