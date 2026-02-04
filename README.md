@@ -133,6 +133,43 @@ Form validation enforces required fields and length constraints, plus a no‑fut
 
 ---
 
+## How to Run the Entire App
+
+**Prerequisites**
+- .NET SDK (net10.0)
+- Node.js (20+) and npm
+- SQL Server or LocalDB
+
+**1) Database**
+- Run [db_script.sql](db_script.sql) in SQL Server to create the database and stored procedures.
+- If needed, update the connection string in [PatientApi/appsettings.json](PatientApi/appsettings.json).
+
+**2) Start the API**
+From the PatientApi folder:
+
+```
+dotnet restore
+dotnet run
+```
+
+API will run at `http://localhost:5010` (see [PatientApi/Properties/launchSettings.json](PatientApi/Properties/launchSettings.json)).
+
+**3) Start the Angular Client**
+From the PatientClient folder:
+
+```
+npm install
+npm start
+```
+
+Client will run at `http://localhost:4200`.
+
+**4) Open the App**
+- Navigate to `http://localhost:4200`
+- The client will call the API at `http://localhost:5010/api/patients`
+
+---
+
 ## Security & CORS
 Local CORS allows the Angular dev server. See [PatientApi/Program.cs](PatientApi/Program.cs).
 
