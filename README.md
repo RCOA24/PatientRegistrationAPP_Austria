@@ -1,6 +1,6 @@
 # Patient Registration Application
 
-**E‑MED Healthcare Technical Exam — Team Documentation**
+**E‑MED Healthcare Technical Exam — Documentation**
 
 Modern, clean CRUD system for patient records using Angular + .NET + SQL Server by Rodney Austria
 
